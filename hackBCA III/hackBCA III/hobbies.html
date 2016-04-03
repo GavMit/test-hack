@@ -9,8 +9,11 @@ background: rgba(255,255,255,0.5);
     .table2 {
 background: rgba(255,255,255,0.5);
     }
+       .label {
+font-family: MingLiU_HKSCS-ExtB;
+    }
 </style>
-<title>About the Hack</title>
+<title>Hobbies</title>
 </head>
 
 
@@ -37,6 +40,7 @@ background: rgba(255,255,255,0.5);
     </center>
    </td>
   </tr>
+    
 </table></center>
 <center>
  <center>
@@ -47,7 +51,20 @@ background: rgba(255,255,255,0.5);
              <center>
     <table class="table2" width="400px">
         <tr><td><center><p style="font-family:MingLiU_HKSCS-ExtB;color:#000000;font-size:15px;"><b>As hobbies, I draw, play video games (namely osu!), and sing.  I am also an avid fan of computer science, and I read about it often.</b></p></center></td></tr>
-        </table>
+        <tr><td><center><label class ="label"for ="hobby">Tell me your hobbies!</label><input type="text" name="hobby"id="hobby" size="16" maxlength="16" /></center></td></tr></label>
+       <td>
+        <center>
+        <button onclick="myFunction()">Submit</button>
+        <p id="hb"></p>
+       <script>
+           function myFunction() {
+               document.getElementById("hb").innerHTML = "Thank you!";
+               document.getElementById("hobby").value = "";
+           }
+</script>
+</center>
+</td>
+         </table>
         </center>
         <footer><center>
 <small><br>Created April 3rd 2016 by Gavriela Mitnick</small></center>
